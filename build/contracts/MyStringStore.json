@@ -1,0 +1,926 @@
+{
+  "contractName": "MyStringStore",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "myString",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x492bfa18"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "string"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x4ed3885e"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x6d4ce63c"
+    }
+  ],
+  "bytecode": "0x60806040526040805190810160405280600b81526020017f48656c6c6f20576f726c640000000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b61044f806101166000396000f3fe608060405234801561001057600080fd5b506004361061005e576000357c010000000000000000000000000000000000000000000000000000000090048063492bfa18146100635780634ed3885e146100e65780636d4ce63c146101a1575b600080fd5b61006b610224565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100ab578082015181840152602081019050610090565b50505050905090810190601f1680156100d85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61019f600480360360208110156100fc57600080fd5b810190808035906020019064010000000081111561011957600080fd5b82018360208201111561012b57600080fd5b8035906020019184600183028401116401000000008311171561014d57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102c2565b005b6101a96102dc565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101e95780820151818401526020810190506101ce565b50505050905090810190601f1680156102165780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b505050505081565b80600090805190602001906102d892919061037e565b5050565b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103bf57805160ff19168380011785556103ed565b828001600101855582156103ed579182015b828111156103ec5782518255916020019190600101906103d1565b5b5090506103fa91906103fe565b5090565b61042091905b8082111561041c576000816000905550600101610404565b5090565b9056fea165627a7a723058202a17c9a5913f01ecc275087ea762e3eadf897f374c442ec9da2f20bb411174260029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061005e576000357c010000000000000000000000000000000000000000000000000000000090048063492bfa18146100635780634ed3885e146100e65780636d4ce63c146101a1575b600080fd5b61006b610224565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100ab578082015181840152602081019050610090565b50505050905090810190601f1680156100d85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61019f600480360360208110156100fc57600080fd5b810190808035906020019064010000000081111561011957600080fd5b82018360208201111561012b57600080fd5b8035906020019184600183028401116401000000008311171561014d57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102c2565b005b6101a96102dc565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101e95780820151818401526020810190506101ce565b50505050905090810190601f1680156102165780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b505050505081565b80600090805190602001906102d892919061037e565b5050565b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103bf57805160ff19168380011785556103ed565b828001600101855582156103ed579182015b828111156103ec5782518255916020019190600101906103d1565b5b5090506103fa91906103fe565b5090565b61042091905b8082111561041c576000816000905550600101610404565b5090565b9056fea165627a7a723058202a17c9a5913f01ecc275087ea762e3eadf897f374c442ec9da2f20bb411174260029",
+  "sourceMap": "25:214:2:-;;;52:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;25:214;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:214:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "25:214:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:214:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:38;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;52:38:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:60;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;95:60:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;95:60:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;95:60:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;95:60:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;95:60:2;;;;;;;;;;;;;;;:::i;:::-;;159:78;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;159:78:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;95:60::-;149:1;138:8;:12;;;;;;;;;;;;:::i;:::-;;95:60;:::o;159:78::-;195:13;224:8;217:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;159:78;:::o;25:214::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract MyStringStore {\n  string public myString = \"Hello World\";\n\n  function set(string memory x) public {\n    myString = x;\n  }\n\n  function get() public view returns (string memory){\n      return myString;\n  }\n}",
+  "sourcePath": "/home/nicolas/Dokumente/Github/UBTMasterProject2019/contracts/MyStringStore.sol",
+  "ast": {
+    "absolutePath": "/home/nicolas/Dokumente/Github/UBTMasterProject2019/contracts/MyStringStore.sol",
+    "exportedSymbols": {
+      "MyStringStore": [
+        1840
+      ]
+    },
+    "id": 1841,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1818,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1840,
+        "linearizedBaseContracts": [
+          1840
+        ],
+        "name": "MyStringStore",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1821,
+            "name": "myString",
+            "nodeType": "VariableDeclaration",
+            "scope": 1840,
+            "src": "52:38:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 1819,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "48656c6c6f20576f726c64",
+              "id": 1820,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "77:13:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
+                "typeString": "literal_string \"Hello World\""
+              },
+              "value": "Hello World"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1830,
+              "nodeType": "Block",
+              "src": "132:23:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1828,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1826,
+                      "name": "myString",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1821,
+                      "src": "138:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1827,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1823,
+                      "src": "149:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "138:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 1829,
+                  "nodeType": "ExpressionStatement",
+                  "src": "138:12:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1831,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1823,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1831,
+                  "src": "108:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1822,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:17:2"
+            },
+            "returnParameters": {
+              "id": 1825,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:2"
+            },
+            "scope": 1840,
+            "src": "95:60:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1838,
+              "nodeType": "Block",
+              "src": "209:28:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1836,
+                    "name": "myString",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1821,
+                    "src": "224:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 1835,
+                  "id": 1837,
+                  "nodeType": "Return",
+                  "src": "217:15:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1839,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1832,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:2"
+            },
+            "returnParameters": {
+              "id": 1835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1834,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1839,
+                  "src": "195:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1833,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "195:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "194:15:2"
+            },
+            "scope": 1840,
+            "src": "159:78:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1841,
+        "src": "25:214:2"
+      }
+    ],
+    "src": "0:239:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/nicolas/Dokumente/Github/UBTMasterProject2019/contracts/MyStringStore.sol",
+    "exportedSymbols": {
+      "MyStringStore": [
+        1840
+      ]
+    },
+    "id": 1841,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1818,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1840,
+        "linearizedBaseContracts": [
+          1840
+        ],
+        "name": "MyStringStore",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1821,
+            "name": "myString",
+            "nodeType": "VariableDeclaration",
+            "scope": 1840,
+            "src": "52:38:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 1819,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "48656c6c6f20576f726c64",
+              "id": 1820,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "77:13:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
+                "typeString": "literal_string \"Hello World\""
+              },
+              "value": "Hello World"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1830,
+              "nodeType": "Block",
+              "src": "132:23:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1828,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1826,
+                      "name": "myString",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1821,
+                      "src": "138:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1827,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1823,
+                      "src": "149:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "138:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 1829,
+                  "nodeType": "ExpressionStatement",
+                  "src": "138:12:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1831,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1823,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1831,
+                  "src": "108:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1822,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:17:2"
+            },
+            "returnParameters": {
+              "id": 1825,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:2"
+            },
+            "scope": 1840,
+            "src": "95:60:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1838,
+              "nodeType": "Block",
+              "src": "209:28:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1836,
+                    "name": "myString",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1821,
+                    "src": "224:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 1835,
+                  "id": 1837,
+                  "nodeType": "Return",
+                  "src": "217:15:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1839,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1832,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:2"
+            },
+            "returnParameters": {
+              "id": 1835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1834,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1839,
+                  "src": "195:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1833,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "195:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "194:15:2"
+            },
+            "scope": 1840,
+            "src": "159:78:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1841,
+        "src": "25:214:2"
+      }
+    ],
+    "src": "0:239:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.3+commit.10d17f24.Emscripten.clang"
+  },
+  "networks": {
+    "1550675158902": {
+      "events": {},
+      "links": {},
+      "address": "0x56871fe6D23d1F651Ef85ccBe015FcdeB6E4cBeC",
+      "transactionHash": "0xd9a5941c9fda1e31efdfcd3520adc21b791c489f50bf39c3be48866d11ec07d9"
+    },
+    "1550697273153": {
+      "events": {},
+      "links": {},
+      "address": "0xb890dd6A5394939Bd6f936cdC5417fC82bA19D82",
+      "transactionHash": "0x824bb5b9b112856adc97c64904cced2923b20fbdabda43bea787504de66536af"
+    },
+    "1550741949086": {
+      "events": {},
+      "links": {},
+      "address": "0xEe950FD1f22d045DD13d6ebE8DEA62a06FcA4F29",
+      "transactionHash": "0x60a40d52168dc65292981112dd064bc75ebc08ea5e69a66887c42d7f549e8aa7"
+    },
+    "1550915582341": {
+      "events": {},
+      "links": {},
+      "address": "0xd8F952527E07Ab57687a747bd1D5700Cc25E503E",
+      "transactionHash": "0x3cb3f0d98f513664d2739896fb747def808d282fd0da734aeaf290230ef182ad"
+    },
+    "1550930396410": {
+      "events": {},
+      "links": {},
+      "address": "0x8f47802267D591f4Ad62db2eA8c9135A4B8Fff8B",
+      "transactionHash": "0x0d87ecb824650670546c7d7794f0d853aa9313f6cc30bfab9b1120eba1dd2198"
+    },
+    "1551009490315": {
+      "events": {},
+      "links": {},
+      "address": "0xe161A7f7E1d57e5225cF152aC4B0AA6ED4dEBD4f",
+      "transactionHash": "0xb4009405720b7608a5f8d07fd1dc6039dac14c6688897716d8a2a40bad7372ad"
+    },
+    "1551010441722": {
+      "events": {},
+      "links": {},
+      "address": "0x2eB22E9ed732ddAC09f58D5644966A6529Fcb6f0",
+      "transactionHash": "0xbc5549d0025a7eb7cd4fe2f44303f02d3f3d9dcd70d67fd69b054d51d3b927a8"
+    },
+    "1551023668012": {
+      "events": {},
+      "links": {},
+      "address": "0xC15443e235a9D52e2863c680E90F615D572db4D2",
+      "transactionHash": "0x108180f4f3f81b24eb81c3b10ae5c1157808106a06f2f1a0773c178c75cfa630"
+    },
+    "1551025069022": {
+      "events": {},
+      "links": {},
+      "address": "0xc257D5EDf7fcD99220Cd225597bc9545976bb7F8",
+      "transactionHash": "0xd10898cd61f2bd148abd14ab13c04d55ec3386146a3cbfa3e7f126129352375a"
+    },
+    "1551030260400": {
+      "events": {},
+      "links": {},
+      "address": "0x31B21efaa02d1cBE80c80565372c574897B81A1d",
+      "transactionHash": "0xa06503d7d34485802e66442d617c600e2d1a1959ab518e940f5874e980e17150"
+    },
+    "1551084014588": {
+      "events": {},
+      "links": {},
+      "address": "0xD592A3f594e292F1CeAafF39A75293085cdc8662",
+      "transactionHash": "0xee2ee6ed96213cdf7a49316fce00a0974b027c69439c3720f940700d1ad4b921"
+    },
+    "1551085880548": {
+      "events": {},
+      "links": {},
+      "address": "0x5916A7fa59D8A5fAb127f6264F08c5686e0FcB9A",
+      "transactionHash": "0x4476ae943d7f879106d4e0b8e6deae13a660e40f8bbbb53f7ab9287d10f45b55"
+    },
+    "1551086829058": {
+      "events": {},
+      "links": {},
+      "address": "0xE31C9984Eec76Fdce2B6D275D6c15cb193f695c5",
+      "transactionHash": "0xb890ba879c73cfa6d1a63f7a24be81d14f5489d3cb4d968566599ab0f5e3b172"
+    },
+    "1551088238607": {
+      "events": {},
+      "links": {},
+      "address": "0xeC5A8ef2a9FA5bA88e48cB4421Bea0EF1fF12F7F",
+      "transactionHash": "0x7a9b405f6a210b6fd823f633d1f4175fe469000db7ece6e09c7459e7da59269d"
+    },
+    "1551109481395": {
+      "events": {},
+      "links": {},
+      "address": "0x64A96beB2f8f30724Ad98E7e31817043D8Fd3fE9",
+      "transactionHash": "0x15fc0c8c5a52a6a0429c42317e3f19fa3d7f22c5cfec8b8a87ff6f8032ff377d"
+    },
+    "1551181123195": {
+      "events": {},
+      "links": {},
+      "address": "0x36bF9d74052a5a3A94ac12EDFf49C546d3a16708",
+      "transactionHash": "0xca48f7c66adcd775d29fc155109e73ef0b69c18c1348115fe1e0f83499c5c99a"
+    },
+    "1551186117167": {
+      "events": {},
+      "links": {},
+      "address": "0x080556C09Fed82f11d6042C5F188909808771346",
+      "transactionHash": "0x0807002fa0b78d0e8f6706dadf15d875026c5ecba2c461f181486a50c3898621"
+    },
+    "1551862283137": {
+      "events": {},
+      "links": {},
+      "address": "0x6246eC90E0D4A1c350086A0740458ee84cd49481",
+      "transactionHash": "0xaefc4582dbd7995029294d9b5b8c74d3424e0128818c2a7173b80ac44bf84ed1"
+    },
+    "1551865687229": {
+      "events": {},
+      "links": {},
+      "address": "0xe54c84EcF38766CaA26f237f8F06A1C8492adF4D",
+      "transactionHash": "0xb66293033b8eccdb6be233d37dbbf9e888a420203c03c4e797c3b937c7ab2e21"
+    },
+    "1551869971387": {
+      "events": {},
+      "links": {},
+      "address": "0x9c2efe3095F534D90ACB786194b5c575dD8A8D7a",
+      "transactionHash": "0xf27d8a007c4bf01ad8932aecda3dfa6b7110af6d8a29b23d6ea4823ee431c3de"
+    },
+    "1552134246979": {
+      "events": {},
+      "links": {},
+      "address": "0xa8AEb309b6AdCB315E925D890CDd83C3FE735D4f",
+      "transactionHash": "0x8158e633755c2ac46f8725e32a401660630622375cbf9f8775933aa582139cf4"
+    },
+    "1552151892220": {
+      "events": {},
+      "links": {},
+      "address": "0x455B503fdefE2Dae616698E8b9c757d884d960cd",
+      "transactionHash": "0x78ae2bda2264b3fa672323d60acc63c7d61afe30e47009458cf30d14ada31114"
+    },
+    "1552232367886": {
+      "events": {},
+      "links": {},
+      "address": "0x58251F296e4b29c8eFd36DD1E9B233e9aDd39939",
+      "transactionHash": "0xd084e4a240b524afadcc47dab2603f9bb1c5a094eb4c06b677ce63fe9f0d9ce6"
+    },
+    "1552233796864": {
+      "events": {},
+      "links": {},
+      "address": "0x89861A8425F41B661Cd68FC6e73F2688436d7573",
+      "transactionHash": "0xf78a2f0394ccc68947e491422a4e911e760794463e0c46850d837542e536e5a9"
+    },
+    "1552406181236": {
+      "events": {},
+      "links": {},
+      "address": "0x8A01f93b58ca4A3a82244AE0DcEdd3d0C538A7fD",
+      "transactionHash": "0x48bb4b8fb943f27f5fca09580774017c8f16899e726cd1f2723479171195e3ca"
+    },
+    "1552730817398": {
+      "events": {},
+      "links": {},
+      "address": "0x3F312f7eB44B25d5E9392294cB29e35d9d80abd2",
+      "transactionHash": "0xb23d5c9b744e5eaefa7b039e4ebeaf87001aedf25d0327d7bd1e68022b2b90e2"
+    },
+    "1552731001459": {
+      "events": {},
+      "links": {},
+      "address": "0xaae22192f647eb41f7aD6AcDC6e35b844403a3aE",
+      "transactionHash": "0x7908f58cba22d775b87d65f256096f4dd9b7bf53ad8db77172692b03cb53b987"
+    },
+    "1552742783914": {
+      "events": {},
+      "links": {},
+      "address": "0x66652d8A832535c8391e91718C85084D912a7700",
+      "transactionHash": "0xa4d482a3825f2c40800a6baf62434b39599e4002d7976bd6885d6cd3f077c8ac"
+    },
+    "1552928885348": {
+      "events": {},
+      "links": {},
+      "address": "0x589882841DF2b9a9cBF9c978Bd97575FbF610742",
+      "transactionHash": "0x2e8539d6073906cfa2dd44029065a2b6e9dacd365fd64d3513b74db666912d0b"
+    },
+    "1552929171292": {
+      "events": {},
+      "links": {},
+      "address": "0x48a1a3266d1855422fBb625CDED31Bc73636E53c",
+      "transactionHash": "0x65f53e48d5d320b0cc78217cd94145ba65da1addfa860c954804a36e0618cc46"
+    },
+    "1552929474457": {
+      "events": {},
+      "links": {},
+      "address": "0xF980CC6314d0ec842146C638B935B8444847C042",
+      "transactionHash": "0x42f3e24dae7512b347618e366fc4f7f1ae88105c9cbc03b12ae24c0b3cc8fc5a"
+    },
+    "1552929567174": {
+      "events": {},
+      "links": {},
+      "address": "0xDf9803aDC42E230AEb1A7AB0B802438fdE3af442",
+      "transactionHash": "0x709d19463244b3dd3e2371d17172b9974e2f3d85215a1f1603fce52987f25cd6"
+    },
+    "1552930303115": {
+      "events": {},
+      "links": {},
+      "address": "0x5Ae5aec14037EDc8a4d7eE2E2405629Eceb2e5DD",
+      "transactionHash": "0x02a38dbe097214d7e5d8ecd26f691b495739307e5ee9b6ddb3560e7792eb1ebe"
+    },
+    "1552930460441": {
+      "events": {},
+      "links": {},
+      "address": "0x4642Ecaa811Ed9530445Ff72D165F1f3e80a7209",
+      "transactionHash": "0xf9b63267225b9e0e36d0c83e1672de3ee43fb65197bbc473bd2805d1226d837c"
+    },
+    "1553092658258": {
+      "events": {},
+      "links": {},
+      "address": "0xe3EBACbA748a1AaCae4015B9A84A98141f0c1aC5",
+      "transactionHash": "0xb51051f2db0baf379f2e43c80a6fbb4fe8076befe520a6f929ee129f289c2722"
+    },
+    "1553092899511": {
+      "events": {},
+      "links": {},
+      "address": "0x6c7A46fF9581dBbc82C2b5DF20603d885dbFAE21",
+      "transactionHash": "0x0e793479fcd3068bef0b090499abc3a29550154cf4238427b260a02709b86ca8"
+    },
+    "1553095018820": {
+      "events": {},
+      "links": {},
+      "address": "0x0F4fE18FEd55fC7239F92a2D132a13A577aa81ef",
+      "transactionHash": "0xc8de14d1c46e95e9735db7275f697daf7577bab838e7059e1908ceb427338c1e"
+    },
+    "1553156649099": {
+      "events": {},
+      "links": {},
+      "address": "0xc5A6078aF68200a83bf7e5a5419A03d808E364cf",
+      "transactionHash": "0x9e5825d81ac02f399216d4503e0155705e1a0d2598662bbb4a5fc7aa13bc29f3"
+    },
+    "1553156809255": {
+      "events": {},
+      "links": {},
+      "address": "0xEc58B30b67FA04038C786606e19aA4195822E238",
+      "transactionHash": "0x81f430423ca2a4266323976e42034289264f4e66f8f77834944ac8c63dbc0d22"
+    },
+    "1553157243666": {
+      "events": {},
+      "links": {},
+      "address": "0xd6Ca219536Ff8E97cB858c013A56A0D958043443",
+      "transactionHash": "0xab4e93a8c8620bc13ba4dc2cd673ebbce88933df886280c182bd39f987d12221"
+    },
+    "1553157291751": {
+      "events": {},
+      "links": {},
+      "address": "0x703FB2BcD7d12D8dfBE48E8F98b87Fc350941754",
+      "transactionHash": "0x61bcac262457e314730b1d16b7adca1ec29a1e7d8568b2c647eb7f7da69cb382"
+    },
+    "1553160128173": {
+      "events": {},
+      "links": {},
+      "address": "0x6A9a16502d155BD6e73b47071d0C14A05337b590",
+      "transactionHash": "0x24c12dfdfb257b96243890002bd5509fc0b44220764ef9f2d6399cf6222dc675"
+    },
+    "1553168026348": {
+      "events": {},
+      "links": {},
+      "address": "0xAA6963E083FeA88954317A5176cb39C767fEe9aC",
+      "transactionHash": "0x6874a1485a421708ad4d7fa90f52d00a9e30696e9f1741048898dcf1f14de036"
+    },
+    "1553168272243": {
+      "events": {},
+      "links": {},
+      "address": "0x8A91f93AC06f3a5Bb1E681Eafbb530efC13e1604",
+      "transactionHash": "0x1ef9723eb03e24b7db1ee666994519dca3a0ca6fe184d806c6c15801c99a0b54"
+    },
+    "1553168364618": {
+      "events": {},
+      "links": {},
+      "address": "0x5F92219707bB6288Ab9A7077A03850d88D4a6397",
+      "transactionHash": "0xcd323e282b8d345df3d37e9f652f52e137ee5dcf1e39ede6e173e37edecce94e"
+    },
+    "1553168578328": {
+      "events": {},
+      "links": {},
+      "address": "0x43afd59310e33c0A84b72b756F0494Efa3a9Db0f",
+      "transactionHash": "0xe6ee878f9cccd3e47092d478a57b352c50c5aecb3668dc2240dc750e53c93e56"
+    },
+    "1553169799759": {
+      "events": {},
+      "links": {},
+      "address": "0x26Fd0aD71aD656dE350d603763b0e610edbe12d9",
+      "transactionHash": "0x28371fe14dbe79a3f936083c36b66f1bbb3fb1483e2d96e1cc857525aecdfc63"
+    },
+    "1553170309171": {
+      "events": {},
+      "links": {},
+      "address": "0x83c2dDf979CDA49712cC74C650Db6cFC09A6FD35",
+      "transactionHash": "0x647fa25b58c384629028de8f9c715226bd50e84ffebdbd35a8fdad0fd1b9896c"
+    },
+    "1553170794557": {
+      "events": {},
+      "links": {},
+      "address": "0xeb528F5239308dCD08E7752068e3Fab0FAEB5C68",
+      "transactionHash": "0x6e7b2e57c6131b6b169662bea6c7696c8c1ec43bec25bae6e516b585bef9304d"
+    },
+    "1553172594621": {
+      "events": {},
+      "links": {},
+      "address": "0x9736b00225268bD5EDECb85A93b6bb06a11a4E8a",
+      "transactionHash": "0x372be4eae102a66affeb5fc5aa24179f94bbb72acecd28a74f35f8ac6375da47"
+    },
+    "1553174877312": {
+      "events": {},
+      "links": {},
+      "address": "0x789DB7Bf7aE3B9642e9eEA336E84748854084E21",
+      "transactionHash": "0x4882351cae1571f5b60d35d2e3424cda5ca1cf53b04d437ab75443ac14065ddf"
+    },
+    "1553174988633": {
+      "events": {},
+      "links": {},
+      "address": "0x2A4984AE6deF2C4156d0BeFc421CB88717aB1A6C",
+      "transactionHash": "0x1c3918c04765296fc0d888a77cadcbc71f8c2b206ffc0a5990eda3d1167ea77d"
+    },
+    "1553261868944": {
+      "events": {},
+      "links": {},
+      "address": "0x7B144D26d6aeB429e1fa8857E8b95b87fB5B4d86",
+      "transactionHash": "0xd442334af9e24dae94d3c069569be9e0fbe7194322361ca4caeee7bae5a58791"
+    }
+  },
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-03-22T13:38:04.174Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
